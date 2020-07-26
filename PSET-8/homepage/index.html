@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lan="en">
+    <head>
+        <title>HOMEPAGE 1</title>
+        <link rel="stylesheet" href="style0.css">
+        <link rel="stylesheet" href="link.css">
+        <link rel="stylesheet" href="style4.css">
+    </head>
+    <body>
+
+        <div id= "header" >
+             <h1 style=" text-align:center;" id="h1">HOMEPAGE 1</h1>
+             <h2 style=" text-align:center;">This is CS50</h2>
+        </div>
+        <div class="button">
+        <button class= "b b3"  id="red">RED</button>
+        <button class= "b b2" id="blue">BLUE</button>
+        <button class= "b " id="green">GREEN</button>
+        <button class= "b b5" id="black">BLACK</button>
+        <button class= "b b4" id="gray">GRAY</button>
+        <script>
+           let body = document.getElementById('header');
+           document.querySelector('#red').onclick = function(){
+                 body.style.backgroundColor = 'red';
+                  }
+           document.querySelector('#blue').onclick = function(){
+                 body.style.backgroundColor = 'blue';
+                  }
+           document.querySelector('#green').onclick = function(){
+                 body.style.backgroundColor = 'green';
+                  }
+           document.querySelector('#black').onclick = function(){
+                 body.style.backgroundColor = 'black'; body.style.color = "white"
+                  return true
+           }
+
+           document.querySelector('#gray').onclick = function(){
+                 body.style.backgroundColor = 'gray';
+                  }
+        </script>
+        </div>
+        <h1 id="h1">ABOUT ME</h1>
+            <div class="row">
+              <div class="column" style="background-color:white;">
+              <img src="8.jpg" alt="My Picture" style="width:300px;height:300px;">
+             </div>
+            <div class="column1" style="background-color:white;">
+                <h1 style="text-align:center;">Hello,World..!</h1>
+                <h3 style = "text-align:center;">I am Siva. I am from India. UnderGraduate Aerospace Engineer. First of all , I verymuch thankfull to Harvard University for this course. Previously i am not that much good enough in programming. But after taking CS50 now  got confident in programmings. Thanks to Mr.David, Mr.Brain, Mr.Doug lloyd and all others providing great lectures.</h3>
+            </div>
+            </div>
+            <section>
+                <div>
+                    <div class="animation">Hello Wolrd</div>
+                </div>
+            </section>
+            <br>
+            <br>
+          <div class="button">
+    <h2>THANK YOU</h2>
+    <p>Use the buttons to switch to other webpages</p>
+
+    <button class="bu bu1" onclick = " document.location.href = 'https://01f75a5f-4085-42b3-93f1-f07df5fdaff2-ide.cs50.xyz:8080/homepage2.html';">HOMEPAGE 2</button>
+    <button class="bu bu2"  onclick="document.location.href='https://01f75a5f-4085-42b3-93f1-f07df5fdaff2-ide.cs50.xyz:8080/homepage3.html'">HOMEPAGE 3</button>
+    <button class="bu bu2" onclick="document.location.href='https://01f75a5f-4085-42b3-93f1-f07df5fdaff2-ide.cs50.xyz:8080/homepage4.html'">HOMEPAGE 4</button>
+    </div>
+</div>
+        </body>
+
+</html>

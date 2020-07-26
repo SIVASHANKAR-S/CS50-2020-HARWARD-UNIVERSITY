@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lan="en">
+    <head>
+        <title>HOMEPAGE 3</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style6.css">
+        <link rel="stylesheet" href="link.css">
+
+    <script>
+
+
+      	 function dis(val)
+         {
+             document.getElementById("result").value+=val
+         }
+
+
+         function solve()
+         {
+             let x = document.getElementById("result").value
+             let y = eval(x)
+             document.getElementById("result").value = y
+         }
+
+
+         function clr()
+         {
+             document.getElementById("result").value = ""
+         }
+    </script>
+    </head>
+    <body>
+      <div class="header">
+          <h1 style=" text-align:center;" id="h1">WELCOME TO HOMEPAGE 3</h1>
+          <P style=" text-align:center;">created by siva</P>
+      </div>
+      <div id="a">
+        <h1>Try My Calculator..!</h1>
+      </div>
+      <div>
+        <table border="1" ; align="center">
+         <tr>
+            <td colspan="3"><input type="text" id="result"/></td>
+            <td><input type="button" value="c" onclick="clr()"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="1" onclick="dis('1')"/> </td>
+            <td><input type="button" value="2" onclick="dis('2')"/> </td>
+            <td><input type="button" value="3" onclick="dis('3')"/> </td>
+            <td><input type="button" value="/" onclick="dis('/')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="4" onclick="dis('4')"/> </td>
+            <td><input type="button" value="5" onclick="dis('5')"/> </td>
+            <td><input type="button" value="6" onclick="dis('6')"/> </td>
+            <td><input type="button" value="-" onclick="dis('-')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="7" onclick="dis('7')"/> </td>
+            <td><input type="button" value="8" onclick="dis('8')"/> </td>
+            <td><input type="button" value="9" onclick="dis('9')"/> </td>
+            <td><input type="button" value="+" onclick="dis('+')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="." onclick="dis('.')"/> </td>
+            <td><input type="button" value="0" onclick="dis('0')"/> </td>
+            <td><input type="button" value="=" onclick="solve()"/> </td>
+            <td><input type="button" value="*" onclick="dis('*')"/> </td>
+         </tr>
+      </table>
+      </div>
+
+       <section>
+        <div class="button">
+          <h2>THANK YOU</h2>
+          <p>Use the buttons to switch to other webpages</p>
+
+          <button class="bu bu1" onclick="document.location.href ='https://01f75a5f-4085-42b3-93f1-f07df5fdaff2-ide.cs50.xyz:8080/index.html';" >HOMEPAGE 1</button>
+          <button class="bu bu1" onclick = " document.location.href = 'https://01f75a5f-4085-42b3-93f1-f07df5fdaff2-ide.cs50.xyz:8080/homepage2.html';">HOMEPAGE 2</button>
+          <button class="bu bu2"  onclick="document.location.href='https://01f75a5f-4085-42b3-93f1-f07df5fdaff2-ide.cs50.xyz:8080/homepage4.html'">HOMEPAGE 4</button>
+    </div>
+</div>
+      </section>
+
+    </body>

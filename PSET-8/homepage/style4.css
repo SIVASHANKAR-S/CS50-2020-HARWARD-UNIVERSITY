@@ -1,0 +1,23 @@
+ .animation
+            {
+              width: 100px;
+              height: 60px;
+              background-color: black;
+              color:white;
+              font-size:20px;
+              padding:10px;
+              text-align:center;
+              position: relative;
+              animation-name:box;
+              animation-duration: 75s;
+            }
+
+            @keyframes box {
+              0%   {background-color:red; left:0px; top:0px;}
+              10%  {background-color:yellow; left:50%; top:0px;}
+              25%  {background-color:black; left:100%; top:0px;}
+              50%  {background-color:blue; left:100%; top:100px;}
+              75%  {background-color:green; left:0px; top:100px;}
+              85%  {background-color:green; left:50%; top:100px;}
+              100% {background-color:red; left:0px; top:0px;}
+            }

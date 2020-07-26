@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lan="en">
+
+  <head>
+      <title>H0MEPAGE 2</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style5.css">
+      <link rel="stylesheet" href="link.css">
+     <script src="greet.js"></script>
+    </head>
+   <body>
+      <div class="header">
+          <h1 class="glow">CS50- SIMPLE HOMEPAGE 2</h1>
+          <h2 class="glow">lets interact with each other</h2>
+          <P style="text-align:center;">created by siva</P>
+      </div>
+      <section>
+        <h1 style="text-align:center; font-size:40px;">lets Play...!</h1>
+      </section>
+      <section style="text-align:center">
+        <h1>Kindly Enter your Name </h1>
+         <form onsubmit="greet(); return false;">
+             <input type="text" id="name">
+             <input type="submit">
+         </form>
+         </div>
+      </section>
+        <div>
+          <p style="text-align:center;">
+            <button onclick="myMove()">Press Me</button>
+            <h3 style="text-align:center;">Number of clicks is directly propotional to Number of transistions shakes </h3>
+          </p>
+
+            <div id ="outerbox">
+            <div id ="inneranimation"></div>
+            </div>
+
+            <script>
+            function myMove() {
+              var elem = document.getElementById("inneranimation");
+              var pos = 0;
+              var id = setInterval(frame, 10);
+              function frame() {
+                if (pos == 350) {
+                  clearInterval(id);
+                } else {
+                  pos++;
+                  elem.style.top = pos + 'px';
+                  elem.style.left = pos + 'px';
+                }
+              }
+            }
+            </script>
+          </div>
+      <section>
+          <h1 style="text-align:center;">Do you think words can hover in webpage.?</h1>
+          <div class="word1" >CS50</div>
+          <div class="word2" >Words can Move in a Webpage</div>
+          <div class="word3" > Thanks CS50</div>
+      </section>
+      <br>
+      <br>
+      <br>
+      <section>
+        <div class="button">
+          <h2>THANK YOU</h2>
+          <p>Use the buttons to switch to other webpages</p>
+
+          <button class="bu bu1" onclick="document.location.href ='https://01f75a5f-4085-42b3-93f1-f07df5fdaff2-ide.cs50.xyz:8080/index.html'" >HOMEPAGE 1</button>
+          <button class="bu bu2"  onclick="document.location.href='https://01f75a5f-4085-42b3-93f1-f07df5fdaff2-ide.cs50.xyz:8080/homepage3.html'">HOMEPAGE 3</button>
+          <button class="bu bu2"  onclick="document.location.href='https://01f75a5f-4085-42b3-93f1-f07df5fdaff2-ide.cs50.xyz:8080/homepage4.html'">HOMEPAGE 4</button>
+    </div>
+</div>
+      </section>
+ </body>
+</html>

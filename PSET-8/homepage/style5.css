@@ -1,0 +1,106 @@
+ * {
+              box-sizing: border-box;
+              padding:10px;
+           }
+            .header{
+              background-color: white;
+              height:500px;
+              width:100%;
+              font-family: cursive;
+
+            }
+
+            .glow {
+              font-size: 70px;
+              color: #fff;
+
+              text-align: center;
+              -webkit-animation: glow 1s ease-in-out infinite alternate;
+              -moz-animation: glow 1s ease-in-out infinite alternate;
+              animation: glow 1s ease-in-out infinite alternate;
+            }
+
+            @-webkit-keyframes glow {
+              from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+              }
+
+              to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 30px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6;
+              }
+            }
+
+            #outerbox
+            {
+              width: 200px;
+              height: 200px;
+              position: relative;
+              background: black;
+            }
+            #inneranimation
+            {
+              width: 15px;
+              height: 15px;
+              position: absolute;
+              background-color:white;
+            }
+            .word1
+            {
+                font-size:30px;
+                position: relative;
+                animation-name:word1;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-delay: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+              }
+
+              @keyframes word1
+              {
+                0%   { left:0px; top:0px;}
+                25%  { left:80%; top:0px;}
+                50%  { left:200px; top:200px;}
+                75%  { left:0px; top:200px;}
+                100% { left:0px; top:0px;}
+              }
+              .word2
+              {
+                font-size:30px;
+                position: relative;
+                animation-name:word2;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-delay: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+              }
+
+              @keyframes word2
+              {
+                0%   { left:0px; top:0px;}
+                25%  { left:0px; top:200px;}
+                50%  { left:500px; top:100px;}
+                75%  { left:200px; top:0px;}
+                100% { left:0px; top:0px;}
+              }
+              .word3
+              {
+                font-size:30px;
+                position: relative;
+                animation-name:word3;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-delay: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+              }
+
+              @keyframes word3
+              {
+                0%   { left:200px; top:200px;}
+                25%  { left:150px; top:0px;}
+                50%  { left:160px; top:0px;}
+                75%  { left:200px; top:0px;}
+                100% { left:0px; top:0px;}
+              }
